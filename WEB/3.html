@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB - JavaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor= 'black';
+        document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="day"  onclick="
+        document.querySelector('body').style.backgroundColor= 'white';
+        document.querySelector('body').style.color='black';
+        ">
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">HTML</a></li> 
+                <li><a href="2.html">CSS</a></li> <!--style,class라는 태그는 html의 속성이 됨. & 하나의 태그에는 여러 개의 속성이 들어갈 수 있음.-->
+                <li><a href="3.html">javascript</a></li>
+            </ol>
+            
+            <div id="article">
+                <h2>JavaScript</h2>
+                <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty 
+                much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
+                </p>
+            </div>
+        </div>
+</html>

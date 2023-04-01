@@ -1,0 +1,42 @@
+body {
+    margin:0;
+}
+a { /*태그   만약 클래스라면 .a*/
+    color:blue;
+    text-decoration-line: none;
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 10px;
+}
+ol {
+    border-right: 1px solid gray;
+    width:100px;
+    margin: 0;
+    padding: 20px;
+} /*id*/
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding: 0;
+}
+#grid ol { /*id가 grid인 것 안에 들어있는 태그 ol*/
+    padding-left: 33px;
+}
+#article {
+    padding-left: 20px;
+}
+@media(max-width:800px) {
+    #grid {
+        display: block;
+    }
+    ol {
+        border-right: none;
+    }
+    h1 {
+        border-bottom: none;
+    }
+}
